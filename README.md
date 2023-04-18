@@ -5,8 +5,7 @@ Create easy CLI from YAML. It will automatically construct a parser, read the ar
 ## Install
 
 ```shell-session
-pip install git+
-
+pip install git+https://github.com/JoQCcoz/cliYAML.git
 ```
 
 ## Usage
