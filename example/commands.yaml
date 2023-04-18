@@ -1,0 +1,37 @@
+commandSet1:
+  add:
+    help: This is what command1 does
+    package: example
+    method: add
+    splitArgs: True
+    args:
+      - name: "x"
+        help: This is the first argument
+        type: int
+        default: 'value'
+      - name: "y"
+        help: This is the another argument
+        type: int
+  command2:
+    help: This is what command2 does
+    args:
+      - name: arg1
+        help: This is the first argument
+        type: str
+        default: 'value'
+      - name: arg2
+        help: This is the another argument
+        type: str
+        nargs: +
+commandSet2:
+  command1:
+    help: This is what command1 does
+    args:
+      - name: arg1
+        help: This is the first argument
+        type: str
+        default: 'value'
+      - name: arg2
+        help: This is the another argument
+        type: str
+        nargs: +
